@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shomos platform </title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+  /* تنسيق عام */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #55a8c2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/* شاشة التحميل */
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#194557 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+.loader {
+    border: 5px solid #f0f0f0; /* الحواف الخارجية المفرغة */
+    border-top: 5px solid #9a9ca0; /* الحافة العلوية الكحلية */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    margin-bottom: 10px;
+}
+
+.loading-screen p {
+    font-size: 18px;
+    color: #b8b8b8;
+}
+
+/* حركة الدوران */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* إخفاء المحتوى أثناء التحميل */
+.content {
+    border-radius: 20px;
+    display: none;
+    padding: 20px;
+    margin-top: 0%;
+}
+
+/* تصميم الهيدر */
+header {
+    text-align: center;
+    background-color: #2c3e50;
+    padding: 20px;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.title {
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 32px;
+  text-align: center;
+}
+
+/* تنسيق لائحة الأسعار */
+.price-list {
+  display: flex;
+  gap: 20px;
+}
+
+.price-item {
+  background-color: #0f5f74;
+  border-radius: 12px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.price-item h2 {
+  margin-top: 0;
+  color: #000000;
+}
+
+.price-item p {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #000000;
+}
+
+.price-item ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.price-item ul li {
+  margin: 5px 0;
+  color: #ffffff;
+}
+
+/* تأثير عند التمرير */
+.price-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+  
+  
+.animated-button2 {
+    background-color: #444444;
+    border: none;
+    padding: 20px 25px;
+    margin: 30px;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .animated-button2:hover {
+    background-color: #bbbbbb;
+    transform: scale(1.2) rotate(5deg);
+  }
+  
+.animated-button4 {
+    background-color: #0b4a63;
+    border: none;
+    padding: 20px 25px;
+    margin: 30px;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .animated-button4:hover {
+    background-color: #bbbbbb;
+    transform: scale(1.2) rotate(5deg);
+  }
+  .vin1{
+    border-radius: 520px;
+    
+  }
+  
+.animated-button {
+    width: 80%; /* عرض الأزرار على كامل الشاشة في الهواتف */
+  }
+
+  video, .gallery img {
+    max-width: 90%; /* تصغير الفيديو والصور لتتناسب مع الشاشة */
+  }
+
+  table {
+    width: 95%; /* تكبير عرض الجدول ليتناسب مع الشاشات الصغيرة */
+  }
+
+
+  </style>
+</head>
+<body>
+  <div class="loading-screen">
+    <div class="loader"></div>
+    <p>
+      Loading...
+    </p>
+</div>
+  <h1 class="title"> Price list <img height="60" width="60" class="vin1" alt="May be a graphic of text" class="x1ey2m1c xds687c x5yr21d x10l6tqk x17qophe x13vifvy xh8yej3 xl1xv1r" referrerpolicy="origin-when-cross-origin" src="https://scontent.fcai19-4.fna.fbcdn.net/v/t39.30808-6/464299632_122095761848593573_8124265400044054765_n.png?stp=dst-jpg_p526x296&amp;_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=2285d6&amp;_nc_ohc=850K04C9l74Q7kNvgETmvQd&amp;_nc_zt=23&amp;_nc_ht=scontent.fcai19-4.fna&amp;_nc_gid=AKWg_ChWSUjXF7fKS7S-g-Q&amp;oh=00_AYBomNQzXPUSk83a-nEy9EZM_nXz63k5WaKETWzyxli2Gw&amp;oe=67290CBE"></h1>
+  
+  <div class="price-list">
+    <div class="price-item" onclick="showAlert('الباقة الأساسية')">
+      <h2> The first package </h2>
+      <p>free </p>
+      <ul>
+        <li> Watch the tutorials on YouTube and subscribe to the channel</li>
+        <li> Watch everything new on YouTube</li>
+        <li> <button class="animated-button2" onclick="goToSite('tel:+01010658547')"><h1>ok</h1></button>  </li>
+        <li> </li>
+      </ul>
+    </div>
+
+    <div class="price-item" onclick="showAlert('الباقة المتقدمة')">
+      <h2> Advanced package</h2>
+      <p> $2 per serving </p>
+      <ul>
+        <li>  Learn in a group of 6 people in zoom</li>
+        <li> Follow via WhatsApp</li>
+        <li><button class="animated-button2" onclick="goToSite('tel:+01010658547')"><h1>ok</h1></button></li>
+      </ul>
+    </div>
+
+    <div class="price-item" onclick="showAlert('الباقة المميزة')">
+      <h2> A special package</h2>
+      <p> $6 per serving</p>
+      <ul>
+        <li>You learn on your own in zoom </li>
+        <li> Instant follow-up via WhatsApp</li>
+       <li><button class="animated-button2" onclick="goToSite('tel:20+01010658547')"><h1>ok</h1></button></li>
+      </ul>
+    </div>
+    
+  </div>
+  <button class="animated-button4" onclick="openPage()">   <svg xmlns="http://www.w3.org/2000/svg"  height="100px" width="100px"   viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#d71d1d" d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg>  </button>
+
+  <script>
+    function openPage() {
+      window.location.href = 'https://www.youtube.com/channel/UCbQzvoZ8Ns056cdiq6OlBsA';
+    }
+  </script>
+  <script>
+    function navigateTo(pageId) {
+    const pages = document.querySelectorAll('.page');
+    pages.forEach(page => page.classList.remove('active'));
+    document.getElementById(pageId).classList.add('active');
+  }
+  function showAlert(plan) {
+    alert(`To choose the rest, please call us at:01010658547`);
+  }
+    // إخفاء شاشة التحميل ب  1.5 ثواني
+window.addEventListener('load', function() {
+  setTimeout(function() {
+      document.querySelector('.loading-screen').style.display = 'none';
+      document.querySelector('.content').style.display = 'block';
+  }, 1500); // 1.5 ثواني
+});
+
+  </script>
+</body>
+</html>
